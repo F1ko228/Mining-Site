@@ -3,12 +3,103 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>MiningSite</title>
     <link rel="stylesheet" href="./src/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200;0,6..12,300;0,6..12,400;0,6..12,500;0,6..12,600;0,6..12,700;0,6..12,800;0,6..12,900;0,6..12,1000;1,6..12,200;1,6..12,300;1,6..12,400;1,6..12,500;1,6..12,600;1,6..12,700;1,6..12,800;1,6..12,900;1,6..12,1000&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="kirill">
+    <header class="header">
+        <div class="header_top">
+            <div class="header_container">
+                <div class="header_top__contacts">
+                    <div class="header_top__contacts_wrapper">
+                        <img src="src/image/email.png" alt="message">
+                        <p class="header_top__contacts_title">mein@miner.com</p>
+                    </div>
+                    <div class="header_top__contacts_wrapper">
+                        <img src="src/image/phone.png" alt="phone">
+                        <p class="header_top__contacts_title">+7 (999) 999-99-99</p>
+                    </div>
+                </div>
+                <div class="header_top__social">
+                    <a href="https://web.telegram.com"><img src="src/image/telegram.png" alt="telegram"></a>
+                    <a href="https://web.whatsapp.com"><img src="src/image/whats-app-filled.png" alt="whatsapp"></a>
+                </div>
+            </div>
+        </div>
+        <div class="header_bottom">
+            <div class="header_container">
+                <p class="header_bottom_logo">Mine Miner</p>
+                <nav class="header_bottom_nav">
+                    <div class="header_bottom_nav_catalog">
+                        <a class="header_bottom_nav_elements" href="#">Каталог товаров</a>
+                        <img src="src/image/triangleCatalog.svg" alt="triangle">
+                    </div>
+                    <a class="header_bottom_nav_elements" href="#">Цены</a>
+                    <a class="header_bottom_nav_elements" href="#">Калькулятор</a>
+                    <a class="header_bottom_nav_elements" href="#">Доставка</a>
+                    <a class="header_bottom_nav_elements" href="#">Отзывы</a>
+                    <button class="header_bottom_nav_button">Заказать звонок</button>
+                </nav>
+                <div class="header_bottom_otherFunc">
+                    <div class="header_bottom_otherFunc_elements">
+                        <img src="src/image/magGlass.png" alt="MagGlass">
+                    </div>
+                    <div class="header_bottom_otherFunc_elements">
+                        <div class="header_bottom_otherFunc_elements__counter">6</div>
+                        <img src="src/image/heartHead.png" alt="favorites">
+                    </div>
+                    <div class="header_bottom_otherFunc_elements">
+                        <div class="header_bottom_otherFunc_elements__counter">3</div>
+                        <img src="src/image/cart.png" alt="basket">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="main">
 
     </div>
+    <footer class="footer">
+        <div class="footer_container">
+            <div class="footer_information logo">
+                <h1 class="footer_information_title">Mein Miner</h1>
+                <p class="footer_information_ps">© Mein Miner, 2022</p>
+            </div>
+            <div class="footer_information">
+                <h3 class="footer_information_buyers">Покупателям</h3>
+                <div class="footer_information_nav">
+                    <a href="#">О компании</a>
+                    <a href="#">Цены</a>
+                    <a href="#">Калькулятор</a>
+                    <a href="#">Доставка</a>
+                    <a href="#">Отзывы</a>
+                    <a href="#">Контакты</a>
+                </div>
+                
+            </div>
+            <div class="footer_information">
+                <h3 class="footer_information_buyers">Каталог товаров</h3>
+                <div class="footer_information_nav">
+                    <a href="#">Asic miners</a>
+                    <a href="#">GPU фермы</a>
+                    <a href="#">Видеокарты</a>
+                    <a href="#">Аксессуары</a>
+                    <a href="#">Компьютерные комплектующие</a>
+                    <a href="#">Комплектующие для майнинга</a>
+                </div>
+            </div>
+            <div class="footer_information button">
+                <button class="footer_information__button">Заказать звонок</button>
+                <div class="footer_information_privacyPolicy">
+                    <p>Публичная оферта</p>
+                    <p>Политика конфиденциальности</p>
+                </div>
+                
+            </div>
+        </div>
+    </footer>
 </body>
 </html>

@@ -1,0 +1,146 @@
+.section_1 {
+    width: 1180px;
+    height: 440px;
+    display: flex;
+    justify-content: space-between;
+
+    &_catalog {
+        width: 780px;
+        min-width: 300px;
+        height: 440px;
+        background: linear-gradient(73.56deg, #0D748B -10.13%, #1A0B73 75.49%);
+        position: relative;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+
+        &_background {
+            position: absolute;
+            left: 0px;
+            top: 0px;
+            z-index: 0;
+        }
+        &_list {
+            position: absolute;
+            display: flex;
+            gap: 15px;
+            align-items: center;
+            bottom: 30px;
+            right: 20px;
+
+            &_elements {
+                width: 10px;
+                height: 10px;
+                border-radius: 50%;
+                background-color: rgba(56, 176, 193, 0.4);
+                transition: .2s ;
+            }
+            &_elements:hover {
+                width: 12px;
+                height: 12px;
+                background-color:rgba(56, 176, 193, 1);
+            }
+            &_elements:active {
+                width: 12px;
+                height: 12px;
+                background-color:rgba(56, 176, 193, 1);
+            }
+        }
+        &_machine {
+            z-index: 1000;
+        }
+        &_text {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+            z-index: 1000;
+            h1 {
+                font-size: 38px;
+                font-weight: 800;
+                color: rgba(255, 255, 255, 1);
+                text-transform: uppercase;
+            }
+            p {
+                font-size: 18px;
+                font-weight: 600;
+                color: rgba(255, 255, 255, 1);
+                align-self: start;
+            }
+
+            button {
+                align-self: start;
+                width: 200px;
+                height: 50px;
+                border-radius: 50px;
+                background-color: rgba(255, 255, 255, 1);
+                color: rgba(24, 21, 75, 1);
+                font-size: 15px;
+                font-weight: 700;
+                transition: .3s;
+            }
+            button:hover {
+                box-shadow: 0px 4px 30px 0px rgba(255, 255, 255, 0.4);
+            }
+            button:active {
+                background: linear-gradient(0deg, rgba(24, 21, 75, 0.15), rgba(24, 21, 75, 0.15)), linear-gradient(0deg, #FFFFFF, #FFFFFF);
+            }
+        }
+    }
+    &_discounts {
+        width: 380px;
+        min-width: 300px;
+        height: 440px;
+        background: radial-gradient(106.32% 141.75% at -6.32% -2.5%, #42E8E0 0%, #40DDDA 0%, #3AAEC0 9.21%, #3484A9 17.3%, #2F6195 25.73%, #2B4486 34.58%, #282E79 44%, #261E71 54.25%, #24156C 65.94%, #24126A 82.26%);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+
+        &_title {
+            width: 290px;
+            display: flex;
+            justify-content: start;
+            p {
+                font-size: 28px;
+                font-weight: 800;
+                color: rgba(255, 255, 255, 1);
+                
+            }
+            
+        }
+        &_nameDiscount {
+            display: flex;
+            gap: 20px;
+            align-items: center;
+
+            h3 {
+                font-size: 56px;
+                font-weight: 700;
+                color: rgba(255, 255, 255, 1);
+            }
+            p {
+                color: rgba(255, 255, 255, 1);
+                font-size: 18px;
+                font-weight: 600;
+            }
+        }
+        &_catalog {
+            display: flex;
+            gap: 10px;
+
+            &_link {
+                display: flex;
+                gap: 10px;
+                align-self: end;
+
+                &_word {
+                    font-size: 16px;
+                    font-weight: 700;
+                    color: rgba(255, 255, 255, 1);
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+}

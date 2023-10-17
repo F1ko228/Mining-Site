@@ -1,0 +1,141 @@
+.section_4 {
+    width: 1180px;
+    min-width: 300px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    &_title {
+        text-transform: uppercase;
+        color: rgba(24, 21, 75, 1);
+        font-size: 36px;
+        font-weight: 800;
+        align-self: start;
+    }
+    &_cardsProducts {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        width: 100%;
+
+        &_elements {
+            width: 220px;
+            height: 360px;
+            color: rgba(255, 255, 255, 1);
+            box-shadow: 0px 4px 20px 0px rgba(0, 7, 94, 0.1);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            &_wrapper {
+                width: 180px;
+                height: 90%;
+                display: flex;
+                flex-direction: column;
+                gap: 5px;
+                align-items: center;
+            }
+            &_upper {
+                height: 22px;
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+                &_sale {
+                    background-color: rgba(240, 245, 251, 1);
+                    height: 22px;
+                    width: 46px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+            }
+            &_name {
+                font-size: 14px;
+                font-weight: 600;
+                color: rgba(48, 50, 57, 1);
+                align-self: flex-start;
+            }
+            &_inStock {
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                align-self: flex-start;
+
+                &_text {
+                    font-size: 12px;
+                    font-weight: 600;
+                    color: rgba(155, 155, 155, 1);
+                }
+            }
+            &_price {
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+
+                &_main {
+                    font-size: 14px;
+                    font-weight: 700;
+                    color: rgba(48, 50, 57, 1);
+                }
+                &_image {
+                    width: 36px;
+                    height: 36px;
+                    background-color: rgba(240, 245, 251, 1);
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    border-radius: 50%;
+                }
+                &_image.productAdd {
+                    background: linear-gradient(73.56deg, #0D748B -10.13%, #1A0B73 75.49%);
+
+                }
+                &_discount {
+                    color: rgba(155, 155, 155, 1);
+                    font-size: 10px;
+                    font-weight: 600;
+                    text-decoration: line-through;
+                }
+            }
+            &_button {
+                width: 180px;
+                height: 44px;
+                background: linear-gradient(73.56deg, #0D748B -10.13%, #1A0B73 75.49%);
+                color: rgba(255, 255, 255, 1);
+                font-size: 14px;
+                font-weight: 700;
+                border-radius: 50px;
+                border: 0;
+                transition: .3s;
+            }
+            &_button:hover   {
+                box-shadow: 0px 4px 20px 0px rgba(26, 11, 115, 0.4);
+            }
+        }
+    }
+    &_swap {
+        height: 15px;
+        display: flex;
+        gap: 10px;
+        align-items: center;
+
+        &_elements {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background-color: rgba(56, 176, 193, 0.4);
+            transition: .1s;
+        }
+        &_elements:hover {
+            background-color: rgba(56, 176, 193, 1);
+            width: 12px;
+            height: 12px;
+        }
+    }
+}

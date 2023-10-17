@@ -1,6 +1,8 @@
 .section_1 {
     width: 1180px;
-    height: 440px;
+    min-width: 300px;
+    max-height: 700px;
+    flex-wrap: wrap;
     display: flex;
     justify-content: space-between;
 

@@ -1,0 +1,93 @@
+.section_6 {
+    position: relative;
+    width: 1180px;
+    height: 330px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &_background {
+        position: absolute;
+        top: 0;
+        left: 0;
+        border-radius: 10px;    
+        z-index: 1;
+    }
+    &_title {
+        text-transform: uppercase;
+        font-size: 28px;
+        font-weight: 800;
+        color: rgba(255, 255, 255, 1);
+    }
+    &_wrapper {
+        width: 80%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        z-index: 1000;
+    }
+    &_text {
+        font-size: 18px;
+        font-weight: 600;
+        color: rgba(255, 255, 255, 1);
+    }
+    &_form {
+        display: flex;
+        gap: 30px;
+        align-items: center;
+        height: 60px;
+
+        &_input {
+            width: 240px;
+            height: 50px;
+            padding-left: 15px;
+            border-radius: 50px;
+            font-size: 14px;
+            font-weight: 400;
+            color: rgba(243, 243, 243, 0.7);
+            background: linear-gradient(0deg, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3));
+            border: 1px solid rgba(243, 243, 243, 0.7);
+            outline: none;
+            transition: .1s;
+        }
+        &_submit {
+            width: 240px;
+            height: 50px;
+            border-radius: 50px;
+            background-color: rgba(255, 255, 255, 1);
+            border: none;
+            transition: .3s;
+            font-size: 15px;
+            font-weight: 700;
+            color: rgba(24, 21, 75, 1);
+        }
+        &_submit:hover {
+            box-shadow: 0px 4px 30px 0px rgba(255, 255, 255, 0.4);
+        }
+        &_input:focus {
+            border: 1px solid rgba(243, 243, 243, 1);
+            background: linear-gradient(0deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5));
+        }
+        &_input:invalid  {
+            border: 1px solid rgba(255, 20, 20, 1);
+        }
+    }
+    &_formCheck {
+        display: flex;
+        gap: 10px;
+        align-items: center;
+
+        &_text {
+            font-size: 14px;
+            font-weight: 400;
+            color: rgba(243, 243, 243, 1);
+
+            a {
+                color: rgba(243, 243, 243, 1);
+            }
+        }
+
+    }
+}
